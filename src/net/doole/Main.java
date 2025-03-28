@@ -36,16 +36,21 @@ public class Main {
 
                 }else {
                     answerWrong(answers[counter]);
-                    playAgain();
-                    if (scanner.next().equals("Y")) {
-                        score = 0;
-                        continue;
-                    } else {
-                        break;
-                    }
                 }
             }
+
+            playAgain();
+            if (scanner.next().equals("Y")) {
+                score = 0;
+                continue;
+            } else {
+                break;
+            }
+
+
         }
+
+        System.out.println("Thank you for playing!");
 
 
 
